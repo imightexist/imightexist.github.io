@@ -1,1 +1,21 @@
-
+<!DOCTYPE html>
+<head>
+    <title>TacoCoin - Login</title>
+    <link rel="shortcut icon" href="..\favicon.ico"/>
+    <link rel="stylesheet" href="..\style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section class="navbar">
+        <a href="/"><img src="..\imgicon.png"></a>
+        <a style="font-size:x-large;position:relative;top:-10px;color:white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <!--<a style="font-size:large;position:relative;top:-10px;color:white">Learn More&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>-->
+        <a style="font-size:large;position:relative;top:-10px;color:white">Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <a style="font-size:large;position:relative;top:-10px;color:white">Sign Up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    </section>
+    <h1 style="color:white;"><center>Login</center></h1>
+    <center><input id="username" placeholder="Username" style="font-size:30px"></center><br>
+    <center><input id="password" type="password" placeholder="Password" style="font-size:30px"></center><br>
+    <center><button onclick="login()" class="btn-green">Login</button></center>
+    <center><a id="error" style="font-size:15px;color:red;display:none">Incorrect login</a></center>
+</body>
