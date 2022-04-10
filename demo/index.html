@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <!-- github is being stupid rn and saying index.html doesnt exist but some parts of the page still loads. what the fuck? -->
+    <script>
+        //f
+        params = new URLSearchParams(window.location.search);
+        var url;
+        if (params.get('url')){
+            url = params.get('url');
+        }else{
+            url = prompt('URL (content must be the raw html file, not an actual html file)');
+        }
+        xml = new XMLHttpRequest();
+        xml.open('GET',url,false);
+        xml.send(null);
+        document.write(xml.responseText);
+    </script>
+</head>
+<body>
+    test
+</body>
+</html>
